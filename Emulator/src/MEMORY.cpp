@@ -1,5 +1,12 @@
 #include "MEMORY.h"
 
+/*
+    Program memory starts at 0x0000
+    Data memory starts at 0x8000
+    Stack starts at 0xFE00
+*/
+
+
 uint8_t MEM::Read(uint16_t addr) const
 {
     return data[addr]; 
